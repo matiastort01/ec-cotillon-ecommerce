@@ -1,0 +1,95 @@
+#categoriasTable thead th {
+    background-color: #e8eff0; /* Pastel azul claro */
+    color: #3a3a3a; /* Gris oscuro para contraste */
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid #dcebee; /* Borde pastel */
+    padding: 15px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover en filas */
+#categoriasTable tbody tr:hover {
+    background-color: #f9fbfc; /* Pastel gris claro */
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo para celdas */
+#categoriasTable td {
+    background-color: #ffffff; /* Fondo blanco */
+    color: #333; /* Texto gris oscuro */
+    border: 1px solid #ddd; /* Borde tenue */
+    padding: 12px; /* Espaciado */
+}
+
+.dataTables_filter {
+    margin-bottom: 20px; 
+}
+
+#categoriasTable {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.new-image {
+    display: none;
+}
+
+#productosTable thead th {
+    background-color: #e8eff0; /* Pastel azul claro */
+    color: #3a3a3a; /* Gris oscuro para contraste */
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid #dcebee; /* Borde pastel */
+    padding: 15px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover en filas */
+#productosTable tbody tr:hover {
+    background-color: #f9fbfc; /* Pastel gris claro */
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo para celdas */
+#productosTable td {
+    background-color: #ffffff; /* Fondo blanco */
+    color: #333; /* Texto gris oscuro */
+    border: 1px solid #ddd; /* Borde tenue */
+    padding: 12px; /* Espaciado */
+}
+
+
+.pastel-success {
+    background-color: #8bd3f7 !important;
+    color: #fff !important;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+}
+
+.pastel-success:hover {
+    background-color: #8cb3c7;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.pastel-warning {
+    background-color: #f0cede !important;
+    color: #333 !important;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+}
+
+.pastel-warning:hover {
+    background-color: #f0cede;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+#productosTable {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+

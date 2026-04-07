@@ -1,0 +1,391 @@
+    .header-user {
+        min-height: 10px;
+        padding: 0;
+        margin-bottom: 1rem;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #a2cadf;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    .margin-top-100 {
+        margin-top: 100px;
+    }
+
+    /* Media query para que cuando se achique la pantalla por debajo de md se aumente el margin-top */
+    @media (max-width: 767px) {
+        .margin-top-100 {
+            margin-top: 140px;
+        }
+    }
+
+    .nav-logo {
+        max-height: 40px;
+    }
+
+    .navbar .nav-link {
+        color: #ffffff !important; /* Blanco puro */
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 1); /* Sombra sutil para resaltar */
+
+    }
+
+    .navbar-brand {
+        margin-left: 15px; /* Aleja el logo del margen izquierdo */
+    }
+
+    .bg-pastel {
+        background-color: #a2cadf; /* Tonalidad pastel melón */
+        color: #e46363; /* Texto oscuro para contraste */
+    }
+
+    /* Estilo del formulario de búsqueda */
+    .search-form {
+        max-width: 500px;
+        display: flex;
+        align-items: center;
+        margin-left: auto; /* Mueve el formulario completamente a la derecha */
+    }
+
+    .search-form input {
+        border-radius: 0.25rem 0 0 0.25rem;
+        border: 1px solid #db92c5;
+        border-right: none;
+    }
+
+    .form-control:focus {
+        border-color: #FFC0CB !important; /* Rosa pastel */
+        outline: none !important; /* Opcional: quita el contorno predeterminado */
+        box-shadow: 0 0 5px #FFC0CB !important; /* Opcional: agrega un brillo rosado alrededor */
+    }
+
+    .search-form button {
+        border-radius: 0 0.25rem 0.25rem 0;
+        border: 1px solid #db92c5 !important;
+        background-color: #eb9ac0;
+        color: white;
+        border-left: none;
+    }
+
+    .search-form button:hover {
+        background-color: #ffcbdb;
+        transition: background-color 0.3s ease;
+    }
+
+    /* Estilo para el botón de Login */
+    .btn-outline-light {
+            /* Un color que combine con el navbar */
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+        color: white;
+        border: none;
+        border-radius: 0.25rem;
+    }
+
+    /* Esto evita el cambio de color al clickear */
+    .btn-outline-light:focus {
+        color: white !important; /* Mantiene el color blanco del texto */
+        background-color: transparent !important; /* Sin cambio en el fondo */
+        box-shadow: none !important; /* Elimina el contorno */
+        outline: none !important; /* Elimina el borde adicional */
+    }
+
+    /* Esto evita el cambio de color al pasar por arriba */
+    .btn-outline-light:hover {
+        color: white !important;
+        background-color: transparent !important;
+        border-color: transparent !important;
+    }
+
+    /* Estilo para el dropdown (no funciona) */
+    .dropdown {
+        margin-right: 20px; /* Ajusta este valor según sea necesario */
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0; /* Asegura que no haya un desplazamiento raro */
+    }
+
+    .dropdown-menu {
+        min-width: 200px;
+    }
+    .dropdown-item {
+        color: #333;
+        background-color: #fff;
+    }
+
+    .dropdown-item:hover {
+        background-color: #f8f9fa;
+        color: #000;
+    }
+
+    /* Eliminar la flecha del dropdown */
+    .dropdown-toggle::after {
+        display: none; /* Esto elimina la flecha */
+    }
+
+    /* LO USA EL ABOUT-US -> Ojo con estas que se usan por todos lados */
+
+    .btn-pastel {
+        background-color: #b3e5fc; /* Azul pastel */
+        color: white; /* Texto blanco */
+        border: none; /* Sin borde */
+        font-size: 1.2rem;
+        transition: all 0.3s ease;
+    }
+
+    .btn-pastel:hover {
+        background-color: #81d4fa; /* Azul pastel más oscuro */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-pastel:active {
+        background-color: #4fc3f7; /* Azul pastel aún más oscuro */
+        transform: scale(0.98); /* Ligero efecto de pulsación */
+    }
+
+    .text-pastel {
+        color: #a2cadf; /* Color pastel para los títulos */
+    }
+
+    /* Ajuste de las imágenes en círculos y botones */
+    .col-md-3 .img-fluid {
+        border-radius: 50%;
+        border: 5px solid #f9f6f0;
+    }
+
+    /* Ajuste de las imágenes en las filas */
+    .row.align-items-center img {
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    /* LO USA EL WELCOME */
+
+    .swiper {
+        width: 100%;
+        max-width: 900px; /* Ajusta el ancho máximo del slider */
+        height: 400px; /* Altura fija para el slider */
+        margin: 0 auto; /* Centrar horizontalmente */
+        position: relative; /* Para posicionar los controles */
+        background-color: #f8f9fa; /* Fondo claro como fallback */
+    }
+
+    /* Estilo de las imágenes dentro del slider */
+    .swiper-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 2%;
+        border: 2px solid #ffffff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Controles de las flechas */
+    .swiper-button-prev,
+    .swiper-button-next {
+        color: #ffffff; /* Blanco para las flechas */
+        border-radius: 50%; /* Forma circular */
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute; /* Se posicionan relativas al contenedor */
+        top: 50%;
+        transform: translateY(-50%); /* Centrar verticalmente */
+        z-index: 10;
+    }
+
+    /* Posición específica de cada flecha */
+    .swiper-button-prev {
+        left: 10px; /* Ajusta la separación del borde izquierdo */
+    }
+    .swiper-button-next {
+        right: 10px; /* Ajusta la separación del borde derecho */
+    }
+
+    /* Scrollbar del slider */
+    .swiper-scrollbar {
+        background-color: #ddd; /* Color de fondo del scrollbar */
+        height: 5px; /* Altura del scrollbar */
+        border-radius: 5px;
+    }
+
+    /* LO USA EL FOOTER */
+    #id-direccion {
+        text-decoration: none;
+    }
+
+    .bg-light-dark {
+        background-color: #333; /* Negro más claro */
+    }
+
+    .bg-light-dark a {
+        color: #ccc; /* Opcional: Cambiar el color de los enlaces a un gris más claro */
+    }
+
+    .bg-light-dark a:hover {
+        color: #fff; /* Opcional: Cambiar el color al pasar el mouse */
+    }
+
+    .bg-light-dark .mx-2 {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    /* Estilos para el header */
+    .bg-pastel {
+        background-color: #8eb5ca; /* Tonalidad pastel melón */
+        color: #e46363; /* Texto oscuro para contraste */
+    }
+
+    /* No se mb como funciona esto, pero hace que se mantenga en todo momento */
+    /* body, html {
+        overflow-x: hidden; /* Evita el scroll horizontal
+    } */
+
+    /* PRODUCTOS VER MAS */
+    .add-to-cart-btn:hover, .buy-now-btn:hover {
+        background-color: #81d4fa;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .add-to-cart-btn:active, .buy-now-btn:active {
+        background-color: #4fc3f7;
+        transform: scale(0.98);
+    }
+
+    /* Contenedor para ocultar la flecha */
+    .select-wrapper {
+        position: relative;
+        display: inline-block;
+    }
+
+    /* Estilos para el select de cantidad sin flecha */
+    .quantity-select {
+        appearance: none; /* Otros navegadores */
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        padding: 8px 12px;
+        font-size: 1.1rem;
+        background-color: #ffffff;
+        cursor: pointer; /* Establece el cursor como puntero */
+        width: 100%;
+        padding-right: 30px; /* Ajusta el padding para que no se vea la flecha */
+    }
+
+    /* Opcional: personaliza el fondo del select */
+    .quantity-select::after {
+        content: ''; /* No muestra pseudo-elemento */
+    }
+
+    /* Estilos para los botones */
+    .add-to-cart-btn, .buy-now-btn {
+        background-color: #81cdf0; /* Azul pastel */
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.1rem;
+        padding: 10px 20px;
+        transition: all 0.3s ease;
+    }
+
+    /* USADO CUANDO  NO HAY PRODUCTOS */
+
+    .no-products-message {
+        text-align: center;
+        padding: 50px;
+        border-radius: 10px;
+        margin-top: 30px;
+    }
+
+    .no-products-message p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+    }
+
+    .no-products-message .btn-pastel {
+        font-size: 1.2rem;
+        padding: 12px 30px;
+        background-color: #a2cadf;
+        color: white;
+        text-transform: uppercase;
+        border-radius: 30px;
+        border: none;
+        transition: all 0.3s ease;
+    }
+
+    .no-products-message .btn-pastel:hover {
+        background-color: #eec8d1;
+    }
+
+    .no-products-message .btn-pastel:active {
+        transform: scale(0.98);
+    }
+
+    /* Secciones del producto */
+     .product-image {
+        border-radius: 10px;
+        max-height: 400px;
+        object-fit: contain;
+        background-color: #ffffff;
+        padding: 10px;
+    }
+
+    .product-title {
+        font-size: 2.5rem;
+        color: #84b0bd; /* Verde pastel */
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-price {
+        color: #e46363; /* Rojo pastel */
+        font-weight: bold;
+    }
+
+    /* PROBAR PAGINACION */
+    .pagination .page-item.active .page-link {
+        background-color: #9cd2eb;
+        border-color: #a9dcf3;
+        color: white;
+    }
+
+    .pagination .page-item.active .page-link:hover {
+        background-color: #81d4fa;
+        border-color: #81d4fa;
+    }
+
+    .pagination .page-link {
+        color: black; /* Default text color */
+        font-size: 1rem;
+    }
+
+    .pagination .page-item:hover .page-link {
+        background-color: #f5f5f5; /* Light gray background on hover */
+        color: black;
+    }
+
+    .card-image {
+        width: 100%;
+        object-fit: contain;
+        padding: 1rem;
+        max-height: 200px;
+    }
+
+    .card-image-cat {
+        width: 100%;
+        max-height: 150px;
+        object-fit: cover;
+    }
+
+    .card-price {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #e6a7cb;
+        margin: 0;
+    }
